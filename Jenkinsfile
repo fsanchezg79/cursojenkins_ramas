@@ -10,8 +10,8 @@ pipeline {
         }
         stage('Build') {
                steps { 
-                 sh 'g++ hello.cpp -o hello'       
-                                         
+                 sh 'g++ main.cpp -o hello'       
+                 sh './hello'                                      
                 }             
         }
         stage('Resumen') {
