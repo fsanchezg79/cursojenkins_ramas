@@ -10,13 +10,13 @@ pipeline {
         }
         stage('Build') {
                steps { 
-                 sh '       
+                 sh 'g++ hello.cpp -o hello'       
                                          
                 }             
         }
         stage('Resumen') {
              steps { 
-                 echo "Todos los porcesos han finalizado correctamente"
+                 echo "Finalizado correctamente"
              }
         }
     }
