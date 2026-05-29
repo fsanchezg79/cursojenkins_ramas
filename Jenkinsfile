@@ -17,7 +17,6 @@ pipeline {
         stage('Resumen') {
              steps { 
                  echo "Finalizado correctamente"
-                 archiveArtifacts artifacts: './hello'
                  archiveArtifacts artifacts: 'hello'
              }
         }
